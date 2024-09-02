@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec image de fond</title>
+    <style>
+        /* Assurez-vous que le corps occupe toute la hauteur et largeur */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style pour l'image de fond */
+        .background-image {
+            background-image: url('img/Untitled.png'); /* Chemin vers votre image */
+            background-size: cover; /* Ajuste l'image à la taille de l'écran */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Évite la répétition de l'image */
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Contenu que vous ajoutez à la page */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="content">
+            <h1>Bienvenue sur ma page</h1>
+            <p>Voici un exemple de page avec une image de fond.</p>
+        </div>
+    </div>
+</body>
+</html>
